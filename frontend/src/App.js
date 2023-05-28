@@ -63,7 +63,7 @@ function App() {
 
         </Routes>
 
-        {/* <Footer1 /> */}
+        <Footer1 />
       </BrowserRouter>
 
       

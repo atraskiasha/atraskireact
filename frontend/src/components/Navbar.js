@@ -42,19 +42,22 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Eshower">E-Shower</NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink className="nav-link" to="/work">Work</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">About Us</NavLink>
+             < NavLink className="nav-link" to="/about">About Us</NavLink>
             </li>
+            
+            
+            
             <li className="nav-item">
               <NavLink className="nav-link" to="https://mycitymyvoice.in/">MCMV</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/blogger">Blogger's Mela</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/Eshower">E-Shower</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/careers">Careers</NavLink>
