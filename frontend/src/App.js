@@ -37,11 +37,11 @@ function App() {
     <>
 
 
-      <BrowserRouter>
+      <BrowserRouter basename="atraskireact">
 
         <Navbar />
         <Routes>
-          <Route exact path="/" Component={Main} />
+          <Route exact path="/atraskireact" Component={Main} />
           <Route exact path="/home" element={<Main/>} />
 
           <Route path="/about" element={<About />} />
