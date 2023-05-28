@@ -7,6 +7,8 @@ const Careers = () => {
 
   return (
     <>
+      {/* // "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
+
    <div class="container py-5">
     <div class="row text-center text-white">
         <div class="col-lg-8 mx-auto">
