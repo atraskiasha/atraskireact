@@ -9,6 +9,7 @@ import logo4 from './images/atraski logo new -2.png';
 const Main = () => {
   return (
     <>
+    {/* "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
       <div className="background">
         <div className="content">
           <h1>Welcome to Atraski</h1>
