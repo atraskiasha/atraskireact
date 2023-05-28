@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useState } from 'react';
 
 import emailjs from 'emailjs-com'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const ContactUs = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
