@@ -17,17 +17,17 @@ function Prod() {
         <h3 class="mt-3 text-white text-center">What We Offer</h3>
         <div class="row mt-4">
           <div class="col-md-4">
-            <a href="https://chat.openai.com/">
+            <a href="">
               <img src={offer1} alt="Image 1" class="img-fluid" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="https://chat.openai.com/">
+            <a href="">
               <img src={offer2} alt="Image 1" class="img-fluid" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="https://chat.openai.com/">
+            <a href="">
               <img src={offer3} alt="Image 1" class="img-fluid" />
             </a>
           </div>
