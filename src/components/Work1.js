@@ -12,6 +12,9 @@ import { Card, Row, Col } from 'react-bootstrap';
 import video1 from './videos/jewel.mp4'
 import video2 from './videos/haldiram.mp4'
 import video3 from './videos/eazydinner.mp4'
+import video4 from './videos/mogasun.mp4'
+import video5 from './videos/dilemughli.mp4'
+
 
 
 
@@ -58,6 +61,26 @@ const Work1 = () => {
                   <p className="description text-center text-bold" style={{ marginBottom: '-40px' }}>Eazy Dinner</p>
                 </div>
                 <video src={video3} autoPlay muted loop className="video-element" />
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card style={{ marginBottom: '30px' }}>
+              <Card.Body style={{ backgroundColor: 'black', position: 'relative' }}>
+                <div className="video-overlay">
+                  <p className="description text-center text-bold" style={{ marginBottom: '-40px' }}>Mog Asun</p>
+                </div>
+                <video src={video4} autoPlay muted loop className="video-element" />
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card style={{ marginBottom: '30px' }}>
+              <Card.Body style={{ backgroundColor: 'black', position: 'relative' }}>
+                <div className="video-overlay">
+                  <p className="description text-center text-bold" style={{ marginBottom: '-40px' }}>Dil E-Mughlai</p>
+                </div>
+                <video src={video5} autoPlay muted loop className="video-element" />
               </Card.Body>
             </Card>
           </Col>

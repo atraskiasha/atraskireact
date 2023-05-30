@@ -1,5 +1,5 @@
 import React from 'react';
-// import client1 from './images/brand1.jpg';
+import about1 from './images/aboutus1.jpg';
 import { Carousel } from 'react-bootstrap';
 
 import client2 from './images/brand2.png';
@@ -28,7 +28,7 @@ const About = () => {
       justifyContent: 'center',
       alignItems: 'center',
       height: '100vh',
-      backgroundImage: `url(${aboutimg})`,
+      backgroundImage: `url(${about1})`,
       backgroundSize: 'cover',
 
     },
@@ -47,8 +47,12 @@ const About = () => {
   };
   return (
     <>
+    
+
       <div style={styles.container}>
         <h1 style={styles.heading}>About Us</h1>
+      {/* <h2>      At Atraski, we believe in inspiring India in a unique and innovative way. Every day, we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we have to offer.Atraski has made its presence felt across PAN India locations, and we have captured the hearts of millions with our unique offerings. We are constantly striving to be better than yesterday and are committed to delivering the best every day.
+</h2> */}
       </div>
 
       

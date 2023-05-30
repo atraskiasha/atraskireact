@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import logo4 from './images/atraski logo new -2.png';
+import logo4 from './images/favicon3.jpeg';
 
 
 
@@ -11,10 +11,10 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-md navbar-dark ">
       <div className="container-fluid">
 
-        <a className="navbar-brand" to="#">
-          <img src={logo4} alt="Your Logo" width="100%" height="100"
+        <NavLink className="navbar-brand" to="/home">
+          <img src={logo4} alt="Your Logo" width="30px" height="30"
             className="d-inline-block align-text-top" />
-        </a>
+        </NavLink>
 
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,8 +27,8 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/home">Home</NavLink>
             </li>
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <NavLink className="nav-link dropdown-toggle no-highlight" to="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" >
                 Services
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
