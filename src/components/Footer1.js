@@ -20,10 +20,10 @@ const Footer1 = () => {
               <p>Atraski India (Kolkata Office)
                 38 Kamalapur (West)
                 Dum Dum Cant, Kolkata - 700028</p>
-                <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
             </div>
           </div>
-         
+
         </div>
       </footer>
 

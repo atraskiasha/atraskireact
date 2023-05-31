@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable jsx-a11y/heading-has-content */
 import event from './imagegallery/event.jpg'
 import subimg1 from './imagegallery/dealer.png'
 import subimg2 from './imagegallery/stall.png'
@@ -8,16 +10,7 @@ import eventimg2 from './imagegallery/w2.jpeg'
 import eventimg3 from './imagegallery/w3.jpeg'
 import eventimg4 from './imagegallery/w4.jpeg'
 import eventimg5 from './imagegallery/w5.jpeg'
-// import eventimg6 from './imagegallery/w6.jpeg'
-// import eventimg7 from './imagegallery/w7.jpeg'
-// import eventimg8 from './imagegallery/w8.jpeg'
 
-// import eventimg10 from './imagegallery/w10.jpeg'
-
-// import eventimg13 from './imagegallery/w13.jpeg'
-
-// import eventimg15 from './imagegallery/w15.jpeg'
-// import eventimg16 from './imagegallery/w16.jpeg'
 import portfolio1 from './images/e1.jpg'
 import portfolio2 from './images/e2.jpg'
 import portfolio3 from './images/e3.jpg'
@@ -25,15 +18,10 @@ import portfolio4 from './images/e4.jpg'
 import portfolio5 from './images/e5.jpg'
 import portfolio6 from './images/e6.jpg'
 import portfolio7 from './images/e7.jpg'
-// import portfolio8 from './images/e8.jpg'
-// import portfolio9 from './images/e9.jpg'
-// import portfolio10 from './images/e10.jpg'
-// import portfolio11 from './images/e11.jpg'
-// import portfolio12 from './images/e12.jpg'
 
-// import portfolio16 from './images/e16.jpg'
 
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 
 
@@ -225,6 +213,29 @@ function Event1() {
                         </div>
                     </div>
                 </div>
+                 {/* footer starts  */}
+      <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
+            </div>
+            <div className="col-md-6 text-md-right">
+              <p>Atraski India
+                O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
+              <p>Atraski India (Kolkata Office)
+                38 Kamalapur (West)
+                Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+      {/*  footer ends  */}
 
             </div>
 

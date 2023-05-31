@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import logo4 from './images/favicon3.jpeg';
+import logo4 from './images/logo.png';
 
 
 
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container-fluid">
 
         <NavLink className="navbar-brand" to="/home">
-          <img src={logo4} alt="Your Logo" width="30px" height="30"
+          <img src={logo4} alt="Your Logo" width="100px" height="100"
             className="d-inline-block align-text-top" />
         </NavLink>
 
@@ -26,9 +26,10 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/home">Home</NavLink>
             </li>
+            
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle no-highlight" to="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" >
+              <NavLink className=" nav-link dropdown-toggle " to="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" style={{color:'#b19a9a'}}>
                 Services
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -41,8 +42,9 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item" to="/marketing">Influencer Marketing</NavLink></li>
               </ul>
             </li>
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/work">Work</NavLink>
+             < NavLink className="nav-link" to="/Work1">Work</NavLink>
             </li>
             <li className="nav-item">
              < NavLink className="nav-link" to="/about">About Us</NavLink>

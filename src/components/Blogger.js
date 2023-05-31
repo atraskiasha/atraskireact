@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
+import { Link} from 'react-router-dom';
 import blogger1 from './imagegallery/Piyush-1.jpg'
 import blogger2 from './imagegallery/Sumedha-1.jpg'
 import blogger3 from './imagegallery/Simran-2.jpg'
@@ -71,23 +73,33 @@ const Blogger = () => {
 
       </ul>
 
-      {/* upcoming events */}
-      <section class="cart">
-        <h2>Your Shopping Cart</h2>
-        <div class="cart-items">
-        </div>
-        <div class="cart-total">
-          <p>Total: <span id="cart-total-amount">$0.00</span></p>
-        </div>
-        <div class="checkout">
-          <h3>Proceed to Checkout</h3>
-          <button id="checkout-btn">Checkout</button>
-        </div>
-      </section>
+      
 
 
 
-      {/* upcoming events */}
+       {/* footer starts  */}
+       <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
+            </div>
+            <div className="col-md-6 text-md-right">
+              <p>Atraski India
+                O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
+              <p>Atraski India (Kolkata Office)
+                38 Kamalapur (West)
+                Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+      {/*  footer ends  */}
 
     </div>
   )

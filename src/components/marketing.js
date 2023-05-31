@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react'
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
+import { Link} from 'react-router-dom';
 
 import offer1 from './imagegallery/socialmedia.png'
 import offer2 from './imagegallery/socialmediaad.png'
@@ -16,11 +18,11 @@ const Marketing = () => {
     setShowModal(true);
   };
 
-  const modalStyle = `
-  .custom-modal .modal-dialog {
-    max-width: 800px;
-  }
-`;
+//   const modalStyle = `
+//   .custom-modal .modal-dialog {
+//     max-width: 800px;
+//   }
+// `;
   return (
     
       <Container>
@@ -52,7 +54,7 @@ const Marketing = () => {
             <h1>Social Media Marketing:</h1>
             <h6>Social media marketing is an essential tool for businesses to connect with their target audience and build brand awareness. It allows companies to reach a wide range of potential customers with tailored messages and engaging content, resulting in increased conversions and revenue growth. By leveraging the power of social media, businesses can foster meaningful customer relationships and stay competitive in the digital landscape.</h6>
             <h1>Social Media Advertising
-              :</h1>
+              </h1>
             <h6>Social media advertising provides businesses with a highly effective way to reach and
               engage their target audience, thanks to the vast user base and advanced targeting
               options available on platforms like Facebook, Instagram, Twitter, and LinkedIn. Social
@@ -77,6 +79,30 @@ const Marketing = () => {
             </Button>
           </Modal.Footer>
         </Modal>
+
+         {/* footer starts  */}
+      <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
+            </div>
+            <div className="col-md-6 text-md-right">
+              <p>Atraski India
+                O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
+              <p>Atraski India (Kolkata Office)
+                38 Kamalapur (West)
+                Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+      {/*  footer ends  */}
       </Container>
 
 

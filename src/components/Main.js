@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
+// import  {  useEffect } from 'react';
 
 import logo1 from './images/bm.jpeg';
 import logo2 from './images/ducati.jpeg';
@@ -37,6 +39,35 @@ const Main = () => {
             <li><a href=""><i className="fa-brands fa-whatsapp whatsapp"></i></a></li>
             <li><a href=""><i className="fa-brands fa-linkedin linkedin"></i></a></li>
           </ul> */}
+{/* import { Container } from 'react-bootstrap';
+
+const HeadingTransform = () => {
+  const [heading, setHeading] = useState('Initial Heading');
+
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      setHeading('Second Heading');
+    }, 1000);
+
+    const timeout2 = setTimeout(() => {
+      setHeading('Third Heading');
+    }, 2000);
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+    };
+  }, []); */}
+
+  {/* return (
+    <Container>
+      <h1>{heading}</h1>
+    </Container>
+  );
+}; */}
+
+{/* export default HeadingTransform; */}
+
         </div>
       </div>
 

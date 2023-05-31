@@ -1,6 +1,6 @@
 import React from 'react';
 import about1 from './images/aboutus1.jpg';
-import { Carousel } from 'react-bootstrap';
+import { Link} from 'react-router-dom';
 
 import client2 from './images/brand2.png';
 import client4 from './images/brand3.png';
@@ -17,7 +17,7 @@ import client12 from './images/brand12.jpg';
 
 
 
-import aboutimg from './images/aboutus.png';
+// import aboutimg from './images/aboutus.png';
 
 const About = () => {
 
@@ -55,7 +55,8 @@ const About = () => {
 </h2> */}
       </div>
 
-      
+      <h1 className="text-white text-center" style={{ margin: '50px' }}>Our Clients</h1>
+
       {/* clients */}
 <div id="clientSlider" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
@@ -141,7 +142,29 @@ const About = () => {
   </button>
 </div>
 
+ {/* footer starts  */}
+ <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
+            </div>
+            <div className="col-md-6 text-md-right">
+              <p>Atraski India
+                O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
+              <p>Atraski India (Kolkata Office)
+                38 Kamalapur (West)
+                Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
 
+        </div>
+      </footer>
+
+      {/*  footer ends  */}
 
 
 

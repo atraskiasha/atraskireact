@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, {useState}from 'react'
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
+import { Link} from 'react-router-dom';
+
 import offer1 from './imagegallery/socialmedia.png'
 import offer2 from './imagegallery/socialmediaad.png'
 import offer3 from './imagegallery/seo.png'
@@ -18,11 +21,11 @@ const Service = () => {
     setShowModal(true);
   };
 
-  const modalStyle = `
-  .custom-modal .modal-dialog {
-    max-width: 800px;
-  }
-`;
+//   const modalStyle = `
+//   .custom-modal .modal-dialog {
+//     max-width: 800px;
+//   }
+// `;
 
 
 
@@ -109,7 +112,29 @@ const Service = () => {
         </div>
       </section>
 
+ {/* footer starts  */}
+ <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
+            </div>
+            <div className="col-md-6 text-md-right">
+              <p>Atraski India
+                O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
+              <p>Atraski India (Kolkata Office)
+                38 Kamalapur (West)
+                Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
+            </div>
+          </div>
 
+        </div>
+      </footer>
+
+      {/*  footer ends  */}
 
 
 

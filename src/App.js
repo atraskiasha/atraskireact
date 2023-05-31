@@ -7,7 +7,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
+  
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 
@@ -46,7 +46,7 @@ function App() {
           <Route path="/" element={<Main/>} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/work" element={<Work1 />} />
+          <Route path="/Work1" element={<Work1 />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/event" element={<Event1 />} />
           <Route path="/public" element={<Public />} />
@@ -63,8 +63,9 @@ function App() {
 
         </Routes>
 
-        <Footer1 />
       </BrowserRouter>
+      {/* <Footer1 /> */}
+
 
       
 

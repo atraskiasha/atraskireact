@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import offer1 from './imagegallery/socialmedia.png'
 import offer2 from './imagegallery/socialmediaad.png'
 import offer3 from './imagegallery/seo.png'
-
+import { Link} from 'react-router-dom';
 
 
 
@@ -42,26 +44,29 @@ function Prod() {
 
       
 
-      {/* footer */}
-
-      <footer class=" text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p><i class="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
-              <p><i class="fa fa-phone"></i> Contact No: 9163720198</p>
-              <p><i class="fa fa-phone"></i> Contact No: 7596009785</p>
+      {/* footer starts  */}
+      <footer className=" text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p><i className="fa fa-envelope"></i> Email: atraskiabhyudaymajhi@gmail.com</p>
+              <p><i className="fa fa-phone"></i> Contact No: 9163720198</p>
+              <p><i className="fa fa-phone"></i> Contact No: 7596009785</p>
             </div>
-            <div class="col-md-6 text-md-right">
+            <div className="col-md-6 text-md-right">
               <p>Atraski India
                 O-8, Block B, Chittaranjan Park, New Delhi, Delhi- 110019</p>
               <p>Atraski India (Kolkata Office)
                 38 Kamalapur (West)
                 Dum Dum Cant, Kolkata - 700028</p>
+              <Link className="footer-link" to="/privacy">Privacy Policy</Link>
             </div>
           </div>
+
         </div>
       </footer>
+
+      {/*  footer ends  */}
 
 
         </>
