@@ -20,8 +20,9 @@ import portfolio6 from './images/e6.jpg'
 import portfolio7 from './images/e7.jpg'
 
 
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,6 +42,15 @@ function Event1() {
         textTransform: 'uppercase',
         textAlign: 'center',
     };
+    const [showModal, setShowModal] = useState(false);
+
+    const handleModalClose = () => {
+      setShowModal(false);
+    };
+  
+    const handleImageClick = () => {
+      setShowModal(true);
+    };
 
 
 
@@ -53,32 +63,58 @@ function Event1() {
                 <h1 className="big-heading">Events:Unforgettable moments, boundless possibilities</h1>
             </div>
             {/* cards */}
-            <div class="container">
-        <h1 class="mt-5 text-white text-center">Digital Marketing</h1>
-        <h3 class="mt-3 text-white text-center">What We Offer</h3>
-        <div class="row mt-4">
-          <div class="col-md-3">
-            <a href="https://chat.openai.com/">
-              <img src={subimg1} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="https://chat.openai.com/">
-              <img src={subimg2} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="https://chat.openai.com/">
-              <img src={subimg3} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="https://chat.openai.com/">
-              <img src={subimg4} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-        </div>
-      </div>
+            <Container>
+        <h1 className="mt-5 text-white text-center">Digital Marketing</h1>
+        <h3 className="mt-3  text-white text-center">What We Offer</h3>
+        <Row className="mt-4" style={{pointerEvents:'cursor'}}>
+          <Col md={3}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={subimg1} alt="Image 1" className="img-fluid" />
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={subimg2} alt="Image 2" className="img-fluid" />
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={subimg3} alt="Image 3" className="img-fluid" />
+            </div>
+          </Col>
+          <Col md={3}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={subimg4} alt="Image 3" className="img-fluid" />
+            </div>
+          </Col>
+        </Row>
+
+        <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000" >
+          <Modal.Header closeButton>
+            <Modal.Title>What We Offer</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Dealers Meet</h4>
+            <h9>It allows companies to reach a wide range of potential customers with tailored messages and engaging content, resulting in increased conversions.</h9>
+            <h4>Stall Fabrication</h4>
+            <h9>media advertising also offers detailed analytics and reporting, enabling businesses to
+              track the performance of their ads in real-time.	</h9>
+            <h4>Launch Event</h4>
+            <h9>It is a crucial digital marketing strategy aimed at
+              improving a website's visibility and organic search rankings on search engine result
+              pages.</h9>
+            <h4>Launch Event</h4>
+            <h9>It is a crucial digital marketing strategy aimed at
+              improving a website's visibility and organic search rankings on search engine result
+              pages.</h9>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleModalClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </Container>
 
 
             {/* cards */}

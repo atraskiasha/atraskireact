@@ -29,6 +29,7 @@ import Blogger from './components/Blogger';
 import Eshower from './components/Eshower';
 import Footer1 from './components/Footer1';
 import Privacy1 from './components/Privacy1';
+import Chat from './components/chat';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
           <Route path="/Eshower" element={<Eshower />} />
           <Route path="/footer" element={<Footer1 />} />
           <Route path="/privacy" element={<Privacy1 />} />
+          <Route path="/chat" element={<Chat />} />
 
 
         </Routes>

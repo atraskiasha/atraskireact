@@ -1,40 +1,87 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-import offer1 from './imagegallery/socialmedia.png'
-import offer2 from './imagegallery/socialmediaad.png'
-import offer3 from './imagegallery/seo.png'
+import React, { useState } from 'react'
+import { Container, Row, Col, Modal, Button} from 'react-bootstrap';
 import { Link} from 'react-router-dom';
+import offer1 from './images/commercial.jpeg'
+import offer2 from './images/productshoot.jpeg'
+import offer3 from './images/podcastandshoot.jpeg'
 
 
 
 function Prod() {
+  const [showModal, setShowModal] = useState(false);
 
+  const handleModalClose = () => {
+    setShowModal(false);
+  };
+
+  const handleImageClick = () => {
+    setShowModal(true);
+  };
   
 
     return (
         <>
-           <div class="container">
-        <h1 class="mt-5 text-white text-center">Production</h1>
-        <h3 class="mt-3 text-white text-center">What We Offer</h3>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <a href="">
-              <img src={offer1} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src={offer2} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src={offer3} alt="Image 1" class="img-fluid" />
-            </a>
-          </div>
-        </div>
-      </div>
+           <Container>
+        <h1 className="mt-5 text-white text-center">Public Relation</h1>
+        <h3 className="mt-3  text-white text-center">What We Offer</h3>
+        <Row className="mt-4">
+          <Col md={4}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={offer1} alt="Image 1" className="img-fluid" />
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={offer2} alt="Image 2" className="img-fluid" />
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className="image-container" onClick={handleImageClick}>
+              <img src={offer3} alt="Image 3" className="img-fluid" />
+            </div>
+          </Col>
+          
+        </Row>
+        </Container>
+
+
+        <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000" >
+          <Modal.Header closeButton>
+            <Modal.Title>What We Offer:</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Media Relations</h4>
+            <h6>Media relations involves managing the relationship between an organization and the
+              media, focusing on building positive interactions, establishing credibility, and effectively
+              communicating key messages to the public through various media channels. </h6>
+            <h4>Event Management
+              :</h4>
+            <h6>Event management encompasses the planning, organization, and execution of various
+              types of events, including conferences, trade shows, weddings, and corporate
+              gatherings, to create memorable and successful experiences. </h6>
+            <h4>Social Media Management
+            </h4>
+            <h6>Social media management involves overseeing and executing a brand's presence
+              across various social media platforms, ensuring consistent messaging, engaging
+              content, and effective community management. 
+
+            </h6>
+            <h4>Content Creation
+            </h4>
+            <h6>Content creation is the process of developing and producing valuable and engaging
+              material, such as articles, blog posts, videos, infographics, and social media posts, to
+              attract and engage a target audience.
+
+            </h6>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleModalClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
 
 
 

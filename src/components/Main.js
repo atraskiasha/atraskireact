@@ -1,6 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
-// import  {  useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 import logo1 from './images/bm.jpeg';
 import logo2 from './images/ducati.jpeg';
@@ -16,14 +21,34 @@ import logo10 from './images/atraski logo new -2.png';
 
 
 const Main = () => {
+  const texts = ['Passionate about digital marketing and ready to make an impact?', 'Looking for an exciting opportunity in the fast-paced world of digital marketing?', 'Ready to take your digital marketing skills to the next level and drive meaningful results?']; // Array of texts
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(texts[currentIndex]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const nextIndex = (currentIndex + 1) % texts.length;
+      setCurrentIndex(nextIndex);
+      setCurrentText(texts[nextIndex]);
+    }, 1000);
+    return () => clearTimeout(timeout);
+  }, [currentIndex, texts]);
+
+  const handleClick = () => {
+    const nextIndex = (currentIndex + 1) % texts.length;
+    setCurrentIndex(nextIndex);
+    setCurrentText(texts[nextIndex]);
+  };
+
   return (
     <>
-    {/* "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
-    <div class="container d-flex justify-content-center align-items-center" style={{height: '100px',width:'400px', marginTop:'50px'}}>
-  <div class="text-center">
-    <img src={logo10} class="img-fluid m-4" alt="Description of the image" />
-  </div>
-</div>
+      {/* "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
+
+      <div class="container d-flex justify-content-center align-items-center" style={{ height: '100px', width: '400px', marginTop: '50px' }}>
+        <div class="text-center">
+          <img src={logo10} class="img-fluid m-4" alt="Description of the image" />
+        </div>
+      </div>
 
 
       <div className="background">
@@ -39,34 +64,11 @@ const Main = () => {
             <li><a href=""><i className="fa-brands fa-whatsapp whatsapp"></i></a></li>
             <li><a href=""><i className="fa-brands fa-linkedin linkedin"></i></a></li>
           </ul> */}
-{/* import { Container } from 'react-bootstrap';
 
-const HeadingTransform = () => {
-  const [heading, setHeading] = useState('Initial Heading');
+          <Button variant="secondary" onClick={handleClick} style={{marginTop: '50px', width:'500px', height:'10vh'}}>
+            {currentText}
+          </Button>
 
-  useEffect(() => {
-    const timeout1 = setTimeout(() => {
-      setHeading('Second Heading');
-    }, 1000);
-
-    const timeout2 = setTimeout(() => {
-      setHeading('Third Heading');
-    }, 2000);
-
-    return () => {
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
-    };
-  }, []); */}
-
-  {/* return (
-    <Container>
-      <h1>{heading}</h1>
-    </Container>
-  );
-}; */}
-
-{/* export default HeadingTransform; */}
 
         </div>
       </div>
@@ -84,7 +86,7 @@ const HeadingTransform = () => {
           /* other CSS styles */
         }}
       >
-        
+
       </div>
 
       <div className="container2"
@@ -197,7 +199,7 @@ const HeadingTransform = () => {
         {/* <h1>My component with inline background image</h1> */}
       </div>
 
-      
+
     </>
 
 

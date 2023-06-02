@@ -1,7 +1,7 @@
 import React from 'react';
 import about1 from './images/aboutus1.jpg';
-import { Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import { Container, Col, Row } from 'react-bootstrap';
 import client2 from './images/brand2.png';
 import client4 from './images/brand3.png';
 import client5 from './images/brand4.jpg';
@@ -17,7 +17,7 @@ import client12 from './images/brand12.jpg';
 
 
 
-// import aboutimg from './images/aboutus.png';
+
 
 const About = () => {
 
@@ -34,11 +34,12 @@ const About = () => {
     },
     heading: {
       textAlign: 'center',
+      // marginLeft:'200px',
       color: '#fff',
       fontSize: '32px',
       fontWeight: 'bold',
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      marginTop: '-70vh',
+      marginTop: '-40vh',
 
     },
 
@@ -47,103 +48,115 @@ const About = () => {
   };
   return (
     <>
-    
+
 
       <div style={styles.container}>
-        <h1 style={styles.heading}>About Us</h1>
-      {/* <h2>      At Atraski, we believe in inspiring India in a unique and innovative way. Every day, we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we have to offer.Atraski has made its presence felt across PAN India locations, and we have captured the hearts of millions with our unique offerings. We are constantly striving to be better than yesterday and are committed to delivering the best every day.
-</h2> */}
+        {/* <h1 style={styles.heading}>About Us</h1> */}
+        <Container>
+          <Row>
+            <Col>
+              <h1 style={styles.heading}>About Us</h1>
+
+              <p className="paragraph text-center mt-5" style={{fontSize:'25px'}}>
+                At Atraski, we believe in inspiring India in a unique and innovative way. Every day, we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we have to offer.Atraski has made its presence felt across PAN India locations, and we have captured the hearts of millions with our unique offerings. We are constantly striving to be better than yesterday and are committed to delivering the best every day.
+                <br></br> Thank you for choosing Atraski. We promise to inspire and delight you every step of the way.
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       <h1 className="text-white text-center" style={{ margin: '50px' }}>Our Clients</h1>
 
-      {/* clients */}
-<div id="clientSlider" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <h1 className="text-white text-center" style={{ margin: '50px' }}>Our Clients</h1>
-    <div className="carousel-item active">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client2} className="img-fluid" alt="Client 1" style={{ fontSize: '20px' }} />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client4} className="img-fluid" alt="Client 2" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client5} className="img-fluid" alt="Client 3" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client6} className="img-fluid" alt="Client 4" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client7} className="img-fluid" alt="Client 5" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client8} className="img-fluid" alt="Client 6" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client9} className="img-fluid" alt="Client 7" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client10} className="img-fluid" alt="Client 8" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client11} className="img-fluid" alt="Client 9" />
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <div className="row justify-content-center">
-        <div className="col-md-2">
-          <img src={client12} className="img-fluid" alt="Client 10" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#clientSlider" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#clientSlider" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
 
- {/* footer starts  */}
- <footer className=" text-white">
+
+      {/* clients */}
+      <div id="caraousel" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <h1 className="text-white text-center" style={{ margin: '50px' }}>Our Clients</h1>
+          <div className="carousel-item active">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client2} className="img-fluid" alt="Client 1" style={{ fontSize: '20px' }} />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client4} className="img-fluid" alt="Client 2" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client5} className="img-fluid" alt="Client 3" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client6} className="img-fluid" alt="Client 4" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client7} className="img-fluid" alt="Client 5" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client8} className="img-fluid" alt="Client 6" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client9} className="img-fluid" alt="Client 7" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client10} className="img-fluid" alt="Client 8" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client11} className="img-fluid" alt="Client 9" />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row justify-content-center">
+              <div className="col-md-2">
+                <img src={client12} className="img-fluid" alt="Client 10" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#clientSlider" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#clientSlider" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      {/* footer starts  */}
+      <footer className=" text-white">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -168,7 +181,7 @@ const About = () => {
 
 
 
-      
+
 
     </>
   )

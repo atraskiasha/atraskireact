@@ -61,47 +61,30 @@ const Public = () => {
 
         <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000" >
           <Modal.Header closeButton>
-            <Modal.Title>Social Media Marketing:</Modal.Title>
+            <Modal.Title>What We Offer:</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h1>Media Relations</h1>
+            <h4>Media Relations</h4>
             <h6>Media relations involves managing the relationship between an organization and the
               media, focusing on building positive interactions, establishing credibility, and effectively
-              communicating key messages to the public through various media channels. Media
-              relations professionals cultivate relationships with journalists, reporters, and media
-              outlets to generate press coverage, secure interviews, and manage media inquiries,
-              ensuring accurate and favorable representation of the organization in the media
-              landscape. Through strategic media relations efforts, organizations can enhance their
-              reputation, manage crisis effectively, and leverage media platforms to reach a wider
-              audience, influencing public perception and shaping their brand narrative.</h6>
-            <h1>Event Management
-              :</h1>
+              communicating key messages to the public through various media channels. </h6>
+            <h4>Event Management
+              :</h4>
             <h6>Event management encompasses the planning, organization, and execution of various
               types of events, including conferences, trade shows, weddings, and corporate
-              gatherings, to create memorable and successful experiences. Event managers handle
-              logistics, budgeting, venue selection, vendor coordination, marketing, and attendee
-              engagement to ensure smooth operations and deliver impactful events that meet the
-              objectives and expectations of clients and participants. With meticulous attention to
-              detail, effective communication, and problem-solving skills, event management
-              professionals bring together all the elements necessary for a seamless and enjoyable
-              event, leaving a lasting impression on attendees.</h6>
-            <h1>Social Media Management
-            </h1>
+              gatherings, to create memorable and successful experiences. </h6>
+            <h4>Social Media Management
+            </h4>
             <h6>Social media management involves overseeing and executing a brand's presence
               across various social media platforms, ensuring consistent messaging, engaging
-              content, and effective community management. It encompasses tasks such as content
-              planning, scheduling, monitoring, and responding to audience interactions, as well as
-              analyzing data and performance metrics to optimize social media strategies.
+              content, and effective community management. 
 
             </h6>
-            <h1>Content Creation
-            </h1>
+            <h4>Content Creation
+            </h4>
             <h6>Content creation is the process of developing and producing valuable and engaging
               material, such as articles, blog posts, videos, infographics, and social media posts, to
-              attract and engage a target audience. A strategic approach to content creation involves
-              understanding the target audience's needs and preferences, conducting thorough
-              research, and delivering high-quality, informative, and captivating content that resonates
-              with the audience, ultimately driving traffic, conversions, and brand loyalty.
+              attract and engage a target audience.
 
             </h6>
           </Modal.Body>
