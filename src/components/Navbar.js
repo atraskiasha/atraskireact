@@ -29,7 +29,7 @@ const Navbar = () => {
             
             <li className="nav-item dropdown">
               <NavLink className=" nav-link dropdown-toggle " to="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" style={{color:'#b19a9a'}}>
+                data-bs-toggle="dropdown" aria-expanded="false" style={{color:'#808080'}}>
                 Services
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

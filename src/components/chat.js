@@ -13,7 +13,7 @@ const Chat = () => {
       message: 'Please enter your name!',
       trigger: (previousValue) => {
         if (previousValue !== 'waiting1') {
-          return 'waiting1';
+         return 'waiting1';
         }
       },
     },
@@ -55,7 +55,8 @@ const Chat = () => {
   ];
 
   return (
-    <div>
+    
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
       <Segment floated="right">
         <ChatBot steps={steps} />
       </Segment>

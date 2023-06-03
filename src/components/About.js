@@ -39,13 +39,25 @@ const About = () => {
       fontSize: '32px',
       fontWeight: 'bold',
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      marginTop: '-40vh',
+      marginTop: '-35vh',
 
     },
-
-
-
+    paragraph: {
+      fontSize: '25px',
+      // Add other initial paragraph styles here
+    }
   };
+
+
+  
+  // Add media queries for different screen sizes
+styles.paragraph['@media (max-width: 768px)'] = {
+  fontSize: '20px',
+};
+
+styles.paragraph['@media (max-width: 480px)'] = {
+  fontSize: '18px',
+};
   return (
     <>
 
@@ -57,7 +69,7 @@ const About = () => {
             <Col>
               <h1 style={styles.heading}>About Us</h1>
 
-              <p className="paragraph text-center mt-5" style={{fontSize:'25px'}}>
+              <p className="paragraph text-center mt-5" style={{fontSize:'20px'}}>
                 At Atraski, we believe in inspiring India in a unique and innovative way. Every day, we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we have to offer.Atraski has made its presence felt across PAN India locations, and we have captured the hearts of millions with our unique offerings. We are constantly striving to be better than yesterday and are committed to delivering the best every day.
                 <br></br> Thank you for choosing Atraski. We promise to inspire and delight you every step of the way.
               </p>

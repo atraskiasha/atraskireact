@@ -3,8 +3,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
-import { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
+// import { useState, useEffect } from 'react';
+// import Button from 'react-bootstrap/Button';
 
 
 import logo1 from './images/bm.jpeg';
@@ -21,32 +21,15 @@ import logo10 from './images/atraski logo new -2.png';
 
 
 const Main = () => {
-  const texts = ['Passionate about digital marketing and ready to make an impact?', 'Looking for an exciting opportunity in the fast-paced world of digital marketing?', 'Ready to take your digital marketing skills to the next level and drive meaningful results?']; // Array of texts
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentText, setCurrentText] = useState(texts[currentIndex]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      const nextIndex = (currentIndex + 1) % texts.length;
-      setCurrentIndex(nextIndex);
-      setCurrentText(texts[nextIndex]);
-    }, 1000);
-    return () => clearTimeout(timeout);
-  }, [currentIndex, texts]);
-
-  const handleClick = () => {
-    const nextIndex = (currentIndex + 1) % texts.length;
-    setCurrentIndex(nextIndex);
-    setCurrentText(texts[nextIndex]);
-  };
+  
 
   return (
     <>
       {/* "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
 
-      <div class="container d-flex justify-content-center align-items-center" style={{ height: '100px', width: '400px', marginTop: '50px' }}>
-        <div class="text-center">
-          <img src={logo10} class="img-fluid m-4" alt="Description of the image" />
+      <div className="container d-flex justify-content-center align-items-center" style={{ height: '100px', width: '400px', marginTop: '50px' }}>
+        <div className="text-center">
+          <img src={logo10} className="img-fluid m-4" alt="Description of the image" />
         </div>
       </div>
 
@@ -54,20 +37,27 @@ const Main = () => {
       <div className="background">
         <div className="content">
           <h1>Welcome to Atraski</h1>
-          <h3 id="heading">Hello, World!
+          <h3 id="heading" style={{marginTop:'-15px'}}>Hello, World!
             We believe in inspiring India in a unique and innovative way. Every day,
             we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we
-            have to offer.We promise to inspire and delight you every step of the way.</h3>
-          {/* <p>Connect With Us:</p>
-          <ul>
-            <li><a href=""><i className="fa-brands fa-instagram instagram"></i></a></li>
-            <li><a href=""><i className="fa-brands fa-whatsapp whatsapp"></i></a></li>
-            <li><a href=""><i className="fa-brands fa-linkedin linkedin"></i></a></li>
-          </ul> */}
+            have to offer.We promise to inspire and delight you every step of the way.Atraski flourishing furiously over the past years is now proud to present a cabinet of successful events throughout all A tier cities of the country including open mics, fashion walks and walks promoting social causes, bloggers meets, art confluences along with travel meets and packaged tours all across India</h3>
+          
 
-          <Button variant="secondary" onClick={handleClick} style={{marginTop: '50px', width:'500px', height:'10vh'}}>
-            {currentText}
-          </Button>
+<a href="/chat" class="containerchat">
+
+          <div className="containerchat">
+            <div id="chatbot">
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+            </div>
+            <div id="chatbot-corner"></div>
+            <div id="antenna">
+              <div id="beam"></div>
+              <div id="beam-pulsar"></div>
+            </div>
+          </div>
+          </a>
 
 
         </div>
@@ -77,22 +67,26 @@ const Main = () => {
 
 
       <div
+        className="background-image-res"
+
         style={{
           backgroundImage: `url(${logo1})`,
-          backgroundSize: '1600px',
+          backgroundSize: 'cover',
+          backgroundRepeat:'no-repeat',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
-          /* other CSS styles */
+          
         }}
       >
 
       </div>
+      
 
       <div className="container2"
         style={{
           backgroundImage: `url(${logo2})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -105,62 +99,57 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo3})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
           backgroundImage: `url(${logo8})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
           backgroundImage: `url(${logo4})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
           backgroundImage: `url(${logo5})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
           backgroundImage: `url(${logo7})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
@@ -172,7 +161,6 @@ const Main = () => {
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
       <div
         style={{
@@ -184,23 +172,13 @@ const Main = () => {
           /* other CSS styles */
         }}
       >
-        {/* <h1>My component with inline background image</h1> */}
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${logo7})`,
-          backgroundSize: '1550px',
-          backgroundAttachment: 'fixed',
-          height: '80vh',
-          position: 'relative',
-          /* other CSS styles */
-        }}
-      >
-        {/* <h1>My component with inline background image</h1> */}
-      </div>
+      
 
 
     </>
+
+
 
 
   )
