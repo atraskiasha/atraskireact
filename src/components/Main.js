@@ -154,7 +154,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo9})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -165,7 +165,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo6})`,
-          backgroundSize: '1550px',
+          backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
