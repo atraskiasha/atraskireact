@@ -710,7 +710,7 @@ p {
 
 .containerchat {
   /* margin-left: 100px; */
-  margin: 30px 700px;
+  margin: 30px 350px;
   height: 500px;
   width: 500px;
   animation: up-down 7.5s infinite ease-in-out;
@@ -1055,6 +1055,23 @@ p {
   }
 }
 
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px)
+  and (-webkit-device-pixel-ratio: 3) {
+  /* Specific styles for iPhone X */
+  .containerchat {
+    width: 140px;
+    height: 140px;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 3px;
+  }
+  }
 /* chatbot */
 /* main page responsive */
 
@@ -1069,6 +1086,7 @@ p {
 }
 
 .content  h3 {
+  
   font-size: 16px;
   line-height: 1.5;
 }
@@ -1110,8 +1128,12 @@ p {
   }
 }
 
-
-
+@media (max-width: 768px){
+  .background-image-res{
+    min-height:100vh;
+    /* min-width: 10px; */
+  }
+}
 
 
 /* main page */

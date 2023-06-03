@@ -29,14 +29,16 @@ const Main = () => {
 
       <div className="container d-flex justify-content-center align-items-center" style={{ height: '100px', width: '400px', marginTop: '50px' }}>
         <div className="text-center">
-          <img src={logo10} className="img-fluid m-4" alt="Description of the image" />
+          <img src={logo10} className="img-fluid m-4" 
+          style={{alignItems:'center'}}
+          alt="Description of the image" />
         </div>
       </div>
 
 
       <div className="background">
         <div className="content">
-          <h1>Welcome to Atraski</h1>
+          <h1 style={{fontSize:'30px'}}>Welcome to Atraski</h1>
           <h3 id="heading" style={{marginTop:'-15px'}}>Hello, World!
             We believe in inspiring India in a unique and innovative way. Every day,
             we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we
@@ -73,6 +75,7 @@ const Main = () => {
           backgroundImage: `url(${logo1})`,
           backgroundSize: 'cover',
           backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -87,6 +90,8 @@ const Main = () => {
         style={{
           backgroundImage: `url(${logo2})`,
           backgroundSize: 'cover',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -100,6 +105,8 @@ const Main = () => {
         style={{
           backgroundImage: `url(${logo3})`,
           backgroundSize: 'cover',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -113,6 +120,8 @@ const Main = () => {
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           height: '80vh',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           position: 'relative',
           /* other CSS styles */
         }}
@@ -122,6 +131,8 @@ const Main = () => {
         style={{
           backgroundImage: `url(${logo4})`,
           backgroundSize: 'cover',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           backgroundAttachment: 'fixed',
           height: '80vh',
           position: 'relative',
@@ -134,6 +145,8 @@ const Main = () => {
           backgroundImage: `url(${logo5})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
@@ -145,6 +158,8 @@ const Main = () => {
           backgroundImage: `url(${logo7})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
@@ -156,6 +171,8 @@ const Main = () => {
           backgroundImage: `url(${logo9})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
@@ -167,6 +184,8 @@ const Main = () => {
           backgroundImage: `url(${logo6})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
           height: '80vh',
           position: 'relative',
           /* other CSS styles */
