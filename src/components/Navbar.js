@@ -49,9 +49,9 @@ const Navbar = () => {
             <li className="nav-item">
              < NavLink className="nav-link" to="/about">About Us</NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
              < NavLink className="nav-link" to="/chat">Chat</NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link" to="https://mycitymyvoice.in/">MCMV</NavLink>
             </li>
