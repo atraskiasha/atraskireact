@@ -67,7 +67,7 @@ styles.paragraph['@media (max-width: 480px)'] = {
         <Container>
           <Row>
             <Col>
-              <h1 style={styles.heading}>About Us</h1>
+              {/* <h1 style={styles.heading}>About Us</h1> */}
 
               <p className="paragraph text-center mt-5" style={{fontSize:'20px'}}>
                 At Atraski, we believe in inspiring India in a unique and innovative way. Every day, we offer a wide range of services across events, travel, blogging, and fashion to bring you the best of what we have to offer.Atraski has made its presence felt across PAN India locations, and we have captured the hearts of millions with our unique offerings. We are constantly striving to be better than yesterday and are committed to delivering the best every day.
