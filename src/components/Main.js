@@ -73,7 +73,7 @@ const Main = () => {
 
         style={{
           backgroundImage: `url(${logo1})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
           backgroundAttachment: 'fixed',
@@ -89,7 +89,7 @@ const Main = () => {
       <div className="container2"
         style={{
           backgroundImage: `url(${logo2})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
           backgroundAttachment: 'fixed',
@@ -104,7 +104,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo3})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
           backgroundAttachment: 'fixed',
@@ -117,7 +117,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo8})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundAttachment: 'fixed',
           height: '80vh',
           backgroundRepeat:'no-repeat',
@@ -130,7 +130,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo4})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
           backgroundAttachment: 'fixed',
@@ -143,7 +143,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo5})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundAttachment: 'fixed',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
@@ -156,7 +156,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo7})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundAttachment: 'fixed',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
@@ -169,7 +169,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo9})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundAttachment: 'fixed',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
@@ -182,7 +182,7 @@ const Main = () => {
       <div
         style={{
           backgroundImage: `url(${logo6})`,
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundAttachment: 'fixed',
           backgroundRepeat:'no-repeat',
           backgroundPosition:'center',
