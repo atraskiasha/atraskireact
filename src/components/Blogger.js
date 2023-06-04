@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
+import React from 'react';
+// import './Upcoming.css';
+// import './Blogger.css';
 import { Link} from 'react-router-dom';
 import blogger1 from './imagegallery/Piyush-1.jpg'
 import blogger2 from './imagegallery/Sumedha-1.jpg'
@@ -11,51 +13,78 @@ import blogger7 from './imagegallery/IMG_20200301_135909_Bokeh-1-scaled.jpg'
 import blogger8 from './imagegallery/vishnu.jpg'
 import Upcoming from './Upcoming';
 
+// import bloger from '../components/imagegallery/blogger.png';
+
+
 const Blogger = () => {
+
+  // const [values ,  setValues] = useState(1);
+
+    // const Decrement = ()=>{
+    //     setValues(values - 1);
+    // }
+
+    // const Increment = () =>{
+    //     setValues(values + 1);
+    // }
+
+
   return (
     <div>
       <h1 className="text-center text-white" style={{ margin: '20px' }}>Blogger's Mela</h1>
       <h3 className="text-center text-white" style={{ margin: '20px' }}>Bloggers who have worked with us!</h3>
 
       {/* Gallery  */}
-      <div class="bgallery">
-        <div class="bgallery-item">
+      <div className="bgallery_section">
+    <div className="bgallery">
+        <div className="bgallery-item">
           <img src={blogger1} alt="Image 1" />
-          <div class="image-popups">PIYUSH RATHI</div>
+          <div className="image-popups">PIYUSH RATHI</div>
         </div>
-        <div class="bgallery-item">
+        <div className="bgallery-item">
           <img src={blogger2} alt="Image 2" />
-          <div class="image-popups">SUMEDHA SHARMA</div>
+          <div className="image-popups">SUMEDHA SHARMA</div>
         </div>
-        <div class="bgallery-item">
+        <div className="bgallery-item">
           <img src={blogger3} alt="Image 3" />
-          <div class="image-popups">SIMRAN POPTANI</div>
+          <div className="image-popups">SIMRAN POPTANI</div>
         </div>
-        <div class="bgallery-item">
+        <div className="bgallery-item">
           <img src={blogger4} alt="Image 4" />
-          <div class="image-popups">ANMOL WADHWANI</div>
+          <div className="image-popups">ANMOL WADHWANI</div>
         </div>
-        <div class="bgallery-item">
-          <img src={blogger5} alt="Image 5" />
-          <div class="image-popups">PRARTHANA JAGAN</div>
-        </div>
-        <div class="bgallery-item">
-          <img src={blogger6} alt="Image 6" />
-          <div class="image-popups">ISHANI MITRA</div>
-        </div>
-        <div class="bgallery-item">
-          <img src={blogger7} alt="Image 7" />
-          <div class="image-popups">HUMA JOAD</div>
-        </div>
-        <div class="bgallery-item">
-          <img src={blogger8} alt="Image 8" />
-          <div class="image-popups">VISHNU KAUSHAL</div>
-        </div>
+
       </div>
-      {/* Gallery  */}
 
-      <Upcoming></Upcoming>
+      {/* <div style={{color:'#fff' , marginTop: '10%'}} className="center_div">
+        <img src={fashion} width="300" height="300" alt='fashion'/>
+      </div> */}
 
+      <div className="bgallery">
+        <div className="bgallery-item">
+          <img src={blogger5} alt="Image 5" />
+          <div className="image-popups">PRARTHANA JAGAN</div>
+        </div>
+        <div className="bgallery-item">
+          <img src={blogger6} alt="Image 6" />
+          <div className="image-popups">ISHANI MITRA</div>
+        </div>
+        <div className="bgallery-item">
+          <img src={blogger7} alt="Image 7" />
+          <div className="image-popups">HUMA JOAD</div>
+        </div>
+        <div className="bgallery-item">
+          <img src={blogger8} alt="Image 8" />
+          <div className="image-popups">VISHNU KAUSHAL</div>
+        </div>
+        </div>
+        
+        </div>
+      
+   {/* // */}
+   <Upcoming />
+   {/* //    */}
+      
 
       <h2 className="text-white text-center" style={{ margin: '50px' }}>What Falls Us Apart</h2>
       <p className="text-white text-center" style={{ margin: '50px' }}>Bloggers Mela has become a highly anticipated and sought-after event for bloggers in

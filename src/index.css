@@ -767,3 +767,19 @@ p {
 
 
 /* main page */
+/* blog */
+.bgallery{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.bgallery-item{
+  display: block;
+}
+
+
+.bgallery_section{
+  display:flex;
+  justify-content: space-around;
+}
+/* blog */

@@ -102,7 +102,7 @@ const Main = () => {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          height: '80vh',
+          height: '100vh',
           position: 'relative',
 
         }}
