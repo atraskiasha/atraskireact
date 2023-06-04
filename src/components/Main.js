@@ -61,13 +61,7 @@ const Main = () => {
     <>
       {/* "homepage": "https://github.com/atraskiasha/atraskireact.git", */}
 
-      {/* <div className="container d-flex justify-content-center align-items-center" style={{ height: '100px', width: '400px', marginTop: '50px' }}>
-        <div className="text-center">
-          <img src={logo10} className="img-fluid m-4" 
-          style={{alignItems:'center'}}
-          alt="Description of the image" />
-        </div>
-      </div> */}
+     
 
 
       <div className="background">
