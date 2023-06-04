@@ -9,6 +9,7 @@ import blogger5 from './imagegallery/118189043_650084005620930_68185012051287614
 import blogger6 from './imagegallery/ishani.jpg'
 import blogger7 from './imagegallery/IMG_20200301_135909_Bokeh-1-scaled.jpg'
 import blogger8 from './imagegallery/vishnu.jpg'
+import Upcoming from './Upcoming';
 
 const Blogger = () => {
   return (
@@ -52,6 +53,9 @@ const Blogger = () => {
         </div>
       </div>
       {/* Gallery  */}
+
+      <Upcoming></Upcoming>
+
 
       <h2 className="text-white text-center" style={{ margin: '50px' }}>What Falls Us Apart</h2>
       <p className="text-white text-center" style={{ margin: '50px' }}>Bloggers Mela has become a highly anticipated and sought-after event for bloggers in

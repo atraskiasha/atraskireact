@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
-// import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Container, Alert } from 'react-bootstrap';
 // import Button from 'react-bootstrap/Button';
 
 
@@ -16,33 +18,44 @@ import logo6 from './images/cme.jpeg';
 import logo7 from './images/eazydiner-prime.png';
 import logo8 from './images/mcmv.jpeg';
 import logo9 from './images/travel.jpeg';
-
-// import logo10 from './images/atraski logo new -2.png';
-
-
-const Main = () => {
-  const headings = ['Marketing Heading hfhjhdgfsfd1', 'Marketing Heading 2', 'Marketing Heading 3']; // Array of headings
-const headingElement = document.getElementById('marketing-heading');
-const dotsContainer = document.getElementById('dots-container');
-let currentIndex = 0;
-
-function animateHeading() {
-  headingElement.textContent = headings[currentIndex];
-  currentIndex = (currentIndex + 1) % headings.length;
-
-  // Toggle visibility of the dots
-  dotsContainer.classList.add('show-dots');
-  setTimeout(() => {
-    dotsContainer.classList.remove('show-dots');
-  }, 1500);
-}
-
-// Call the animateHeading function every 2 seconds (adjust the duration as needed)
-setInterval(animateHeading, 2000);
-
+import handImage from './images/hand.png'; // Import your hand image
  
 
+// import logo10 from './images/atraski logo new -2.png';
+const sentences = [
+    'Harness the power of digital marketing and build business',
+    'Join us in revolution and pave your path to business success.',
+    'Discover the limitless opportunities marketing and unlock your business.',
+    'Take charge of your entrepreneurial journey by mastering digital marketing',
+  ];
 
+const Main = () => {
+  
+  
+  // const SentenceBox = () => {
+    const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
+    const [isHandTapping, setIsHandTapping] = useState(false);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentSentenceIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+      }, 3000); // Change sentence every 3 seconds
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    useEffect(() => {
+      const handTapTimeout = setTimeout(() => {
+        setIsHandTapping(true);
+        const tapEndTimeout = setTimeout(() => {
+          setIsHandTapping(false);
+        }, 500); // Tap animation duration
+        return () => clearTimeout(tapEndTimeout);
+      }, 1000); // Delay before starting tap animation
+      return () => clearTimeout(handTapTimeout);
+    }, [currentSentenceIndex]);
+  
+    const currentSentence = sentences[currentSentenceIndex];
 
   return (
     <>
@@ -66,26 +79,17 @@ setInterval(animateHeading, 2000);
             have to offer.We promise to inspire and delight you every step of the way.Atraski flourishing furiously over the past years is now proud to present a cabinet of successful events throughout all A tier cities of the country including open mics, fashion walks and walks promoting social causes, bloggers meets, art confluences along with travel meets and packaged tours all across India</h3>
 
           <a href="/chat" className="containerchat">
-           
-
-          <div className="container_mark">
-  <div className="row">
-    <div className="col">
-      <h1 id="marketing-heading"></h1>
-      <div id="dots-container">
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
+          <Container className="d-flex align-items-center justify-content-center">
+      <Alert
+        variant="primary"
+        className="text-center position-relative"
+        style={{ width: `${currentSentence.length}ch`, fontSize: '1.5rem', backgroundColor: '#F9F9F9' }}
+      >
+        {isHandTapping && <img src={handImage} alt="Hand" className="hand-image" />}
+        {currentSentence}
+      </Alert>
+    </Container>
+       
           </a>
 
 
