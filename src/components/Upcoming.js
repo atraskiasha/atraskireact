@@ -23,21 +23,21 @@ export default function Upcoming() {
       <div className="blogger_mela">
         <div className="sections">
           <main role="main">
-            <div className="product">
+            <div class="product">
               <figure>
-                <img src={bloger} alt="Product Image" className="product-image" />
+                <img src={bloger} alt="Product Image" class="product-image" />
               </figure>
 
-              <div className="product-description">
-                <div className="info">
+              <div class="product-description">
+                <div class="info">
                   <h1>BLOGGER’S MELA (DELHI)</h1>
                   <p></p>
                 </div>
 
-                <div className="price">₹150.00</div>
+                <div class="price">₹150.00</div>
               </div>
 
-              <div className="product-sidebar">
+              <div class="product-sidebar">
                 <div className="quantity">
                   <button onClick={Decrement}>-</button>
 
@@ -53,21 +53,21 @@ export default function Upcoming() {
 
         <div className="sections">
           <main role="main">
-            <div className="product">
+            <div class="product">
               <figure>
-                <img src={bloger} alt="Product Image" className="product-image" />
+                <img src={bloger} alt="Product Image" class="product-image" />
               </figure>
 
-              <div className="product-description">
-                <div className="info">
+              <div class="product-description">
+                <div class="info">
                   <h1>BLOGGER’S MELA (DELHI)</h1>
                   <p></p>
                 </div>
 
-                <div className="price">₹150.00</div>
+                <div class="price">₹150.00</div>
               </div>
 
-              <div className="product-sidebar">
+              <div class="product-sidebar">
                 <div className="quantity">
                   <button onClick={Decrement}>-</button>
 
@@ -83,21 +83,21 @@ export default function Upcoming() {
 
         <div className="sections">
           <main role="main">
-            <div className="product">
+            <div class="product">
               <figure>
-                <img src={bloger} alt="Product Image" className="product-image" />
+                <img src={bloger} alt="Product Image" class="product-image" />
               </figure>
 
-              <div className="product-description">
-                <div className="info">
+              <div class="product-description">
+                <div class="info">
                   <h1>BLOGGER’S MELA (DELHI)</h1>
                   <p></p>
                 </div>
 
-                <div className="price">₹150.00</div>
+                <div class="price">₹150.00</div>
               </div>
 
-              <div className="product-sidebar">
+              <div class="product-sidebar">
                 <div className="quantity">
                   <button onClick={Decrement}>-</button>
 
