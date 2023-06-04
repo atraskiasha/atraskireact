@@ -1,7 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 // import './Upcoming.css';
 // import './Blogger.css';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import { Link} from 'react-router-dom';
 import blogger1 from './imagegallery/Piyush-1.jpg'
 import blogger2 from './imagegallery/Sumedha-1.jpg'
@@ -11,22 +15,15 @@ import blogger5 from './imagegallery/118189043_650084005620930_68185012051287614
 import blogger6 from './imagegallery/ishani.jpg'
 import blogger7 from './imagegallery/IMG_20200301_135909_Bokeh-1-scaled.jpg'
 import blogger8 from './imagegallery/vishnu.jpg'
-import Upcoming from './Upcoming';
+import fashion from './imagegallery/AT-Fashion-Logo.png.webp';
 
+import Upcoming from './Upcoming';
 // import bloger from '../components/imagegallery/blogger.png';
 
 
 const Blogger = () => {
 
-  // const [values ,  setValues] = useState(1);
-
-    // const Decrement = ()=>{
-    //     setValues(values - 1);
-    // }
-
-    // const Increment = () =>{
-    //     setValues(values + 1);
-    // }
+  
 
 
   return (
@@ -34,52 +31,111 @@ const Blogger = () => {
       <h1 className="text-center text-white" style={{ margin: '20px' }}>Blogger's Mela</h1>
       <h3 className="text-center text-white" style={{ margin: '20px' }}>Bloggers who have worked with us!</h3>
 
+
+
+
       {/* Gallery  */}
-      <div className="bgallery_section">
-    <div className="bgallery">
-        <div className="bgallery-item">
+      <Container>
+      <Row>
+        <Col md={6}>
+          <Row>
+          <Col md={6} className="gallery-col">
+              <img src={blogger1} alt="Image 1" />
+              <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+            <Col md={6} className="gallery-col">
+            <img src={blogger2} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+          <Col md={6} className="gallery-col">
+            <img src={blogger3} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+            <Col md={6} className="gallery-col">
+            <img src={blogger4} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+          </Row>
+        </Col>
+        <Col md={6}>
+          <Row>
+          <Col md={6} className="gallery-col">
+            <img src={blogger5} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+            <Col md={6} className="gallery-col">
+            <img src={blogger6} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+          <Col md={6} className="gallery-col">
+            <img src={blogger7} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+            <Col md={6} className="gallery-col">
+            <img src={blogger8} alt="Image 1" />
+            <div className="image-overlay">
+                  <span className="image-title">Image 1</span>
+              </div>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+
+
+      {/* <div class="bgallery">
+        <div class="bgallery-item">
           <img src={blogger1} alt="Image 1" />
-          <div className="image-popups">PIYUSH RATHI</div>
+          <div class="image-popups">PIYUSH RATHI</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger2} alt="Image 2" />
-          <div className="image-popups">SUMEDHA SHARMA</div>
+          <div class="image-popups">SUMEDHA SHARMA</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger3} alt="Image 3" />
-          <div className="image-popups">SIMRAN POPTANI</div>
+          <div class="image-popups">SIMRAN POPTANI</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger4} alt="Image 4" />
-          <div className="image-popups">ANMOL WADHWANI</div>
+          <div class="image-popups">ANMOL WADHWANI</div>
         </div>
-
-      </div>
-
-      {/* <div style={{color:'#fff' , marginTop: '10%'}} className="center_div">
-        <img src={fashion} width="300" height="300" alt='fashion'/>
-      </div> */}
-
-      <div className="bgallery">
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger5} alt="Image 5" />
-          <div className="image-popups">PRARTHANA JAGAN</div>
+          <div class="image-popups">PRARTHANA JAGAN</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger6} alt="Image 6" />
-          <div className="image-popups">ISHANI MITRA</div>
+          <div class="image-popups">ISHANI MITRA</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger7} alt="Image 7" />
-          <div className="image-popups">HUMA JOAD</div>
+          <div class="image-popups">HUMA JOAD</div>
         </div>
-        <div className="bgallery-item">
+        <div class="bgallery-item">
           <img src={blogger8} alt="Image 8" />
-          <div className="image-popups">VISHNU KAUSHAL</div>
+          <div class="image-popups">VISHNU KAUSHAL</div>
         </div>
-        </div>
-        
-        </div>
+      </div> */}
+      {/* Gallery  */}
       
    {/* // */}
    <Upcoming />
