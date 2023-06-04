@@ -63,7 +63,7 @@ styles.paragraph['@media (max-width: 480px)'] = {
 
 
       <div style={styles.container}>
-        <h1 style={styles.heading}>About Us</h1>
+        <h1 style={styles.heading}>AboutUs</h1>
         <Container>
           <Row>
             <Col>
