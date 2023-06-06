@@ -146,7 +146,7 @@ const Careers = () => {
                                 <li class="list-inline-item"><i class="fa-brands fa-square-facebook"></i></li>
                                 <li class="list-inline-item"><i class="fa-brands fa-square-twitter"></i></li>
                                 <li class="list-inline-item"><i class="fa-brands fa-square-instagram"></i></li>
-                                <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i></li>
+//                                 <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i></li>
                             </ul>
                         </div>
                     </div>
