@@ -13,7 +13,7 @@ import blogger3 from './imagegallery/Simran-2.jpg'
 import blogger4 from './imagegallery/81829159_746328929187181_7991821624035015901_n.jpg'
 import blogger5 from './imagegallery/118189043_650084005620930_6818501205128761498_n.jpg'
 import blogger6 from './imagegallery/ishani.jpg'
-import blogger7 from './imagegallery/IMG_20200301_135909_Bokeh-1-scaled.jpg'
+import blogger7 from './imagegallery/Huma.jpg'
 import blogger8 from './imagegallery/vishnu.jpg'
 import fashion from './imagegallery/AT-Fashion-Logo.png.webp';
 
@@ -41,14 +41,14 @@ const Blogger = () => {
           <Row>
           <Col md={6} className="gallery-col">
               <img src={blogger1} alt="Image 1" />
-              <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+              <div className="image-overlay ">
+                  <span className="image-title">PIYUSH RATHI</span>
               </div>
             </Col>
             <Col md={6} className="gallery-col">
             <img src={blogger2} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">SUMEDHA SHARMA</span>
               </div>
             </Col>
           </Row>
@@ -56,13 +56,13 @@ const Blogger = () => {
           <Col md={6} className="gallery-col">
             <img src={blogger3} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">PRARTHANA JAGAN</span>
               </div>
             </Col>
             <Col md={6} className="gallery-col">
             <img src={blogger4} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">ISHANI MITRA</span>
               </div>
             </Col>
           </Row>
@@ -72,13 +72,13 @@ const Blogger = () => {
           <Col md={6} className="gallery-col">
             <img src={blogger5} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">SIMRAN POPTANI</span>
               </div>
             </Col>
             <Col md={6} className="gallery-col">
             <img src={blogger6} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">ANMOL WADHWANI</span>
               </div>
             </Col>
           </Row>
@@ -86,13 +86,13 @@ const Blogger = () => {
           <Col md={6} className="gallery-col">
             <img src={blogger7} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">HUMA JOAD</span>
               </div>
             </Col>
             <Col md={6} className="gallery-col">
             <img src={blogger8} alt="Image 1" />
             <div className="image-overlay">
-                  <span className="image-title">Image 1</span>
+                  <span className="image-title">VISHNU KAUSHAL</span>
               </div>
             </Col>
           </Row>
