@@ -104,6 +104,7 @@ const Main = () => {
           backgroundAttachment: 'fixed',
           height: '100vh',
           position: 'relative',
+          zIndex:'-1'
 
         }}
       >

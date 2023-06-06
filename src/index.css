@@ -37,8 +37,42 @@ body {
 }
 
 .background {
-  height: 81vh;
+  height: 80vh;
 }
+
+@media screen and (max-width:600px){
+  .background{
+    height:auto;
+  }
+}
+
+@media screen and (max-width:821px){
+  .background{
+    height:auto;
+  }
+}
+
+@media screen and (max-width:360px){
+  .background{
+    height:auto;
+  }
+}
+
+@media screen and (max-width:380px){
+  .background{
+    height:auto;
+  }
+}
+
+
+
+@media screen and (max-width:415px){
+  .background{
+    height:auto;
+  }
+}
+
+
 
 .content {
   text-align: center;
