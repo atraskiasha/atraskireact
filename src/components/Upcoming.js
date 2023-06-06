@@ -48,7 +48,7 @@ export default function Upcoming() {
       <div class="product-sidebar">
         
       <div className="quantity">
-                    <button onClick={Decrement} style={{color:'#222' , fontSize:'25px' , fontWeight:'600' , display:'flex' , justifyContent:'center' , alignContent:'center'}}>-</button>
+                    <button onClick={Decrement} style={{color:'#222' , fontSize:'11px' , fontWeight:'900' , display:'flex' , justifyContent:'center' , alignContent:'center'}}><i class="fa-sharp fa-solid fa-minus" style={{marginTop:'10px'}}></i></button>
                     
                     <div className="box" contentEditable="true" style={{fontSize:'20px' , textAlign:'center' , color:'#fff'}}>
                        {values}
@@ -91,7 +91,7 @@ export default function Upcoming() {
       <div class="product-sidebar">
         
       <div className="quantity">
-                    <button onClick={Decrement} style={{color:'#222' , fontSize:'25px' , fontWeight:'600' , display:'flex' , justifyContent:'center' , alignContent:'center'}}>-</button>
+                    <button onClick={Decrement} style={{color:'#222' , fontSize:'11px' , fontWeight:'900' , display:'flex' , justifyContent:'center' , alignContent:'center'}}><i class="fa-sharp fa-solid fa-minus" style={{marginTop:'10px'}}></i></button>
                     
                     <div className="box" contentEditable="true" style={{fontSize:'20px', textAlign:'center' , color:'#fff'}}>
                        {values}
@@ -134,7 +134,7 @@ export default function Upcoming() {
       <div class="product-sidebar">
         
       <div className="quantity">
-                    <button onClick={Decrement} style={{color:'#222' , fontSize:'25px' , fontWeight:'600' , display:'flex' , justifyContent:'center' , alignContent:'center'}}>-</button>
+                    <button onClick={Decrement} style={{color:'#222' , fontSize:'11px' , fontWeight:'900' , display:'flex' , justifyContent:'center' , alignContent:'center'}}><i class="fa-sharp fa-solid fa-minus" style={{marginTop:'10px'}}></i></button>
                     
                     <div className="box" contentEditable="true" style={{fontSize:'20px', textAlign:'center' , color:'#fff'}}>
                        {values}
