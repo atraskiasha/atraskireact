@@ -305,11 +305,14 @@ main[role="main"] {
 }
 
 
-@media screen and (max-width:822px){
+@media screen and (max-width:820px){
 	.blogger_mela{
 		display:flex;
 		justify-content: space-evenly;
 		flex-wrap:wrap;
+		width:99%;
+		
+		
 		
 	}
 
@@ -323,11 +326,12 @@ main[role="main"] {
 }
 
 
-@media screen and (max-width:915px){
+@media screen and (max-width:912px){
 	.blogger_mela{
 		display:flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		width:100%;
 		
 	}
 
