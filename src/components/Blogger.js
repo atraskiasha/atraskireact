@@ -138,10 +138,13 @@ const Blogger = () => {
       {/* Gallery  */}
       
    {/* // */}
+   <div>
    <Upcoming />
+   </div>
    {/* //    */}
       
 
+<div>
       <h2 className="text-white text-center" style={{ margin: '50px' }}>What Falls Us Apart</h2>
       <p className="text-white text-center" style={{ margin: '50px' }}>Bloggers Mela has become a highly anticipated and sought-after event for bloggers in
         India, having successfully conducted meet and greet sessions in seven cities. It serves
@@ -161,7 +164,7 @@ const Blogger = () => {
         <h6>● Be a part of a fun-filled event</h6>
 
       </ul>
-
+      </div>
       
 
 

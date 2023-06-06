@@ -51,7 +51,7 @@ main[role="main"] {
 }
 .product {
 	background: #fff;
-	max-width: 300px;
+	max-width: 265px;
 	position: relative;
 	z-index: 15;
 	margin: 0 auto;
@@ -208,10 +208,39 @@ main[role="main"] {
 .product:hover .product-sidebar {
 	right: -50px;
 }
+
+.product{
+	max-width:317px;
+}
 @media screen and (max-width: 480px) {
 	#content {
 		margin-top: 60px;
 	}
+	.product .product-sidebar {
+		height: 100%;
+	background: #31353d;
+	width: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	-webkit-transition: right 0.3s ease;
+	-moz-transition: right 0.3s ease;
+	-o-transition: right 0.3s ease;
+	transition: right 0.3s ease;
+	-webkit-border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	-o-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	}
+	.product:hover .product-sidebar {
+		bottom: -50px;
+	}
+
+	
+	
+}
+@media screen and (max-width: 360px) {
 	.product .product-sidebar {
 		width: 100%;
 		height: 50px;
@@ -227,14 +256,7 @@ main[role="main"] {
 		-o-transition: bottom 0.3s ease;
 		transition: bottom 0.3s ease;
 	}
-	.product:hover .product-sidebar {
-		bottom: -50px;
-	}
-}
-@media screen and (max-width: 360px) {
-	.product .product-sidebar {
-		bottom: -50px;
-	}
+	
 }
 
 .heading{
@@ -249,4 +271,103 @@ main[role="main"] {
 
 .sections{
 	margin-top:4rem;
+}
+
+
+@media screen and (max-width:1281px){
+	
+
+	.heading{
+		height: 80vh;
+    width: 100vw;
+}
+
+.product{
+	max-width:334px;
+}
+}
+
+
+@media screen and (max-width:1024px){
+	.blogger_mela{
+		display:flex;
+		justify-content: space-evenly;
+		flex-wrap:wrap;
+	}
+
+	.heading{
+		height:auto;
+	}
+
+	.product{
+		max-width: 273px
+	}
+}
+
+
+@media screen and (max-width:822px){
+	.blogger_mela{
+		display:flex;
+		justify-content: space-evenly;
+		flex-wrap:wrap;
+		
+	}
+
+	.heading{
+		height:auto;
+	}
+
+	.product{
+		max-width: 273px
+	}
+}
+
+
+@media screen and (max-width:915px){
+	.blogger_mela{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+
+	.product{
+		width:120%;
+	}
+
+	.heading{
+		height:auto;
+	}
+}
+
+
+
+@media screen and (max-width:600px){
+	.heading{
+		height:auto;
+	}
+}
+
+
+@media screen and (max-width:413px){
+	.product {
+		width: 120%;
+	}
+}
+
+
+
+@media screen and (max-width:281px){
+	.heading{
+		height:auto;
+	}
+	
+
+	.product {
+		width: 90%;
+	}
+
+	.product .product-description .price{
+		font-size:1.3em;
+	}
 }
