@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Abouts from './Eshower/About';
+import Hero from './Eshower/Hero';
+import Perks from './Eshower/perks';
 const Eshower = () => {
 
 
@@ -7,7 +10,12 @@ const Eshower = () => {
     return (
         <>
             <div className="line">
-                <h2 class='lineUp'>BUSINESS E-SHOWER</h2>
+              
+              <Hero />
+              <Abouts />
+             
+
+                {/* <h2 class='lineUp'>BUSINESS E-SHOWER</h2>
             </div>
 
 
@@ -34,7 +42,7 @@ const Eshower = () => {
                     </div>
                 </div>
                  {/* footer starts  */}
-      <footer className=" text-white">
+      {/* <footer className=" text-white">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -53,7 +61,7 @@ const Eshower = () => {
           </div>
 
         </div>
-      </footer>
+      </footer>  */}
 
       {/*  footer ends  */}
             </div>
