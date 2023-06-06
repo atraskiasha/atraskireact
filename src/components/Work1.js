@@ -92,8 +92,8 @@ const Work1 = () => {
       {/* project details */}
       <nav className="drop-project text-center">
 
-        <label for="touch"><span>Project details</span></label>
-        <input type="checkbox" id="touch" />
+//         <label for="touch"><span>Project details</span></label>
+//         <input type="checkbox" id="touch" />
 
         {/* <ul class="slide">
           <li><a href="#">Pep n Pure,Budget: 50,000,Brief:Implementing Digital Marketing for Pep n Pure Results: Company sales increased by 60% .</a></li>
